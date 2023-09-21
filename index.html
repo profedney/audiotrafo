@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformador de Áudio para Válvula</title>
+</head>
+<body>
+    <h1>Calculadora de Transformador de Áudio para Válvula</h1>
+    <form id="transformerForm">
+        <label for="power">Potência (watts):</label>
+        <input type="number" id="power" required><br>
+
+        <label for="primaryImpedance">Impedância do primário (ohms):</label>
+        <input type="number" id="primaryImpedance" required><br>
+
+        <label for="secondaryImpedance">Impedância do secundário (ohms):</label>
+        <input type="number" id="secondaryImpedance" required><br>
+
+        <label for="frequency">Frequência (Hz):</label>
+        <input type="number" id="frequency" required><br>
+
+        <button type="button" id="calculateButton">Calcular</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <div id="results"></div>
+
+    <script src="transformerCalculator.js"></script>
+</body>
+</html>
