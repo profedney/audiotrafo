@@ -4,28 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformador de Áudio para Válvula</title>
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Adicione algum CSS personalizado para o estilo da página, se necessário */
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        /* Centralize o formulário */
+        #transformerForm {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Centralize os resultados */
+        #results {
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>Calculadora de Transformador de Áudio para Válvula</h1>
+    <h1 class="text-center">Calculadora de Transformador de Áudio para Válvula</h1>
     <form id="transformerForm">
-        <label for="power">Potência (watts):</label>
-        <input type="number" id="power" required><br>
+        <div class="form-group">
+            <label for="power">Potência (watts):</label>
+            <input type="number" id="power" class="form-control" required>
+        </div>
 
-        <label for="primaryImpedance">Impedância do primário (ohms):</label>
-        <input type="number" id="primaryImpedance" required><br>
+        <div class="form-group">
+            <label for="primaryImpedance">Impedância do primário (ohms):</label>
+            <input type="number" id="primaryImpedance" class="form-control" required>
+        </div>
 
-        <label for="secondaryImpedance">Impedância do secundário (ohms):</label>
-        <input type="number" id="secondaryImpedance" required><br>
+        <div class="form-group">
+            <label for="secondaryImpedance">Impedância do secundário (ohms):</label>
+            <input type="number" id="secondaryImpedance" class="form-control" required>
+        </div>
 
-        <label for="frequency">Frequência (Hz):</label>
-        <input type="number" id="frequency" required><br>
+        <div class="form-group">
+            <label for="frequency">Frequência (Hz):</label>
+            <input type="number" id="frequency" class="form-control" required>
+        </div>
 
-        <button type="button" id="calculateButton">Calcular</button>
+        <button type="button" id="calculateButton" class="btn btn-primary btn-block">Calcular</button>
     </form>
 
-    <h2>Resultados:</h2>
-    <div id="results"></div>
+    <h2 class="text-center">Resultados:</h2>
+    <div id="results" class="text-center"></div>
 
+    <!-- Inclua o Bootstrap JS (opcional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="transformerCalculator.js"></script>
 </body>
 </html>
